@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    /*Primary colors*/
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue:  hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /*Neutral color*/
+    --dark-grey: hsl(0, 0%, 59%);   
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-cyan);
+}
+#content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#card {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+#bg-pattern {
+    width: 100%;
+    height: 36%;
+    background-image: url(/profile-card-component-main/images/bg-pattern-card.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile-picture {
+    border-radius: 50%;
+    border: solid 5px white;
+    position: relative;
+    top: 60%;
+}
+#profile-info {
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 0px 1px 1px rgba(128, 128, 128, 0.315);
+}
+#name-age {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 15px;
+}
+#name {
+    color: var(--very-dark-desaturated-blue);
+    margin-right: 10px;
+}
+#age,
+#city {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+#city {
+    font-size: 14px;
+}
+#status {
+    height: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.status-box {
+    width: 30%;
+    text-align: center;
+}
+.status-box h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.status-box h4 {
+    font-size: 11px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.attribution {
+    position: absolute;
+    bottom: 0px;
+}
+#bottom-pattern,
+#top-pattern {
+    position: absolute;
+    z-index: -1;
+}
+#bottom-pattern {
+    top: 40%;
+    left: 50%;
+}
+#top-pattern {
+    bottom: 40%;
+    right: 50%;
+}
+@media screen and (max-width: 414px){
+    #card {
+        width: 90%;
+    }
+    .attribution {
+        font-size: 10px;
+    }
+}
+
