@@ -1,4 +1,4 @@
-🚀 Check out my solution => frontend-mentor-profile-card-orpin.vercel.app
+🚀 Check out my solution =>  https://frontend-mentor-profile-card-orpin.vercel.app
 
 
 
